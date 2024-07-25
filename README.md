@@ -1,13 +1,16 @@
-🚗 Automobile Management App 🚗
+# 🚗 **Automobile Management App** 🚗
+
 Welcome to the Automobile Management App! This project allows you to manage and interact with a database of cars. Follow the instructions below to get started with your development setup.
 
-Getting Started
-1. Install Dependencies
+## Getting Started
+
+### 1. Install Dependencies
+
 First, ensure you have all the necessary npm packages installed:
 
-bash
-Copy code
+```bash
 npm install
+
 2. Seed the Database
 After installing the npm packages, you'll need to populate the database with some initial car data. Run the following command to seed the database:
 
@@ -27,9 +30,3 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Let me know if there's anything else you'd like to add or adjust!
-
-
-
-
-
-
