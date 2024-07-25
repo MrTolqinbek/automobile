@@ -14,14 +14,12 @@ npm install
 2. Seed the Database
 After installing the npm packages, you'll need to populate the database with some initial car data. Run the following command to seed the database:
 
-bash
-Copy code
+```bash
 ts-node src/helpers/seed/automobile.seed.ts
 3. Start the Application
 Once the database is seeded, you can start the application in development mode using:
 
-bash
-Copy code
+```bash
 npm run start:dev
 Contributing
 Feel free to contribute to this project! Please open issues or submit pull requests with any improvements or fixes.
