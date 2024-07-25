@@ -94,7 +94,7 @@ export class AutomobileService {
     return await this.automobileRepository.save(automobile);
   }
 
-  async update(id: number, automobile: UpdateAutomobileDto): Promise<void> {
+  async update(id: number, automobile: UpdateAutomobileDto): Promise<Automobile> {
     const a = await this.automobileRepository.findOne({ where: { id } });
     if (!a) {
       throw new BadRequestException({
@@ -105,6 +105,7 @@ export class AutomobileService {
       });
     }
     await this.automobileRepository.update(id, automobile);
+   return await this.automobileRepository.findOne({ where: { id } });
   }
 
   async remove(id: number): Promise<void> {
@@ -118,5 +119,6 @@ export class AutomobileService {
       });
     }
     await this.automobileRepository.delete(id);
+    return 
   }
 }
